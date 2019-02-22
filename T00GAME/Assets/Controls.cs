@@ -15,7 +15,7 @@ public class Controls : MonoBehaviour
   {
     float H = Input.GetAxis("Horizontal");
     float V = Input.GetAxis("Vertical");
-    Vector3 Move = new Vector3(V + Time.deltaTime / 2, 0, H + Time.deltaTime / 2);
+    Vector3 Move = new Vector3(V, 0, H);
 
     transform.Translate(Move);
   }
